@@ -58,7 +58,7 @@ void Game::ComposeFrame()
 {
 	const Vec2 trl = { float( gfx.ScreenWidth ) / 2.0f,float( gfx.ScreenHeight ) / 2.0f };
 	const Mat2 trf = Mat2::Rotation( theta ) * Mat2::Scaling( size );
-	auto vtx( star );
+	auto vtx = star;
 	for( auto& v : vtx )
 	{
 		v *= trf;
